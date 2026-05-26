@@ -1,0 +1,110 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Hiragino Mincho ProN",
+    "Yu Mincho",
+    serif;
+
+  background-color: #f8f5f0;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* 上部 */
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.date {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #8a7f6b;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  color: #4a4036;
+}
+
+.names {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #6b5d4d;
+}
+
+/* 共通 */
+
+.section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #4a4036;
+}
+
+/* 席次表 */
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.table-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.table-card h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #8a6b43;
+  border-bottom: 1px solid #e5ddd0;
+  padding-bottom: 8px;
+}
+
+.table-card ul {
+  list-style: none;
+}
+
+.table-card li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* スマホ */
+
+@media screen and (max-width: 768px) {
+
+  .hero {
+    padding: 60px 20px 40px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+}
